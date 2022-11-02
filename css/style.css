@@ -1,0 +1,659 @@
+:root {
+    --color-primary: #08A6E4;
+    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-secondary-shadow: rgba(0, 0, 0, 0.16);
+    --color-light-grey: #A5A5A5;
+    --color-black: #000;
+    --color-redish: #FB3B64;
+    --color-green: #55DFB4;
+    --color-grey: #A5A5A5;
+    --color-white: #FFFFFF;
+    --color-lightgrey-background: #F7F7F7;
+    --color-border: #E8E9ED;
+    --color-greyline: #95989A;
+    --color-formgrey: #707070;
+    --primary-font-family: 'Open Sans', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font-family);
+}
+
+
+/*** FIRST SECTION ***/
+/* HEADER */
+
+
+.first-section {
+    width: 100%;
+    box-shadow: 0 0.3rem 0.6rem var(--color-secondary-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 135.2rem;
+}
+
+.first-section-header.container {
+    padding: 1.9rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--color-primary);
+    font-size: 3.2rem;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 3.7rem;
+}
+
+.first-section-nav {
+    padding: 0 13.6rem;
+}
+
+.header-menu {
+    display: flex;
+    gap: 9.5rem;
+    word-spacing: 0.328rem;
+    text-transform: uppercase;
+    border: transparent;
+    letter-spacing: 0.1875rem;
+
+}
+
+.nav-link {
+    color: var(--color-light-grey);
+    font-weight: 700;
+    border-bottom: 0.4rem solid transparent;
+    text-transform: uppercase;
+    padding: 2.8rem 1.8rem 2.2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.nav-link:hover {
+    color: var(--color-black);
+    border-bottom: 0.4rem solid var(--color-primary);
+}
+
+
+/* MAIN SECTION */
+.headers {
+    font-family: Raleway, sans-serif;
+    font-size: 3.6rem;
+}
+
+.content_text {
+    font-size: 1.6rem;
+    padding-bottom: 6rem;
+    line-height: 2.2rem;
+}
+
+.second-section {
+    text-align: center;
+}
+
+.second_header {
+    font-size: 4.9rem;
+    padding: 13rem 0 2rem 0;
+    line-height: 5.7rem;
+}
+
+.photo-img {
+    width: 100%;
+    background-position: bottom center;
+}
+
+.btn:hover {
+    color: var(--color-black);
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: 2.2rem 15.7rem 2.2rem 15.7rem;
+    font-weight: 700;
+    box-shadow: 0.5rem 1rem 1.4rem var(--color-primary-shadow);
+}
+
+.first-section-btn {
+    border-radius: 4rem;
+}
+
+.photo-img {
+    padding-top: 1.5rem;
+}
+
+/* SEKCJA 2 */
+
+.third-header {
+    padding: 10rem 0 10.1rem 0;
+    text-align: center;
+}
+
+.third__section-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80rem;
+    margin: auto;
+}
+
+.views__section-container {
+    text-align: center;
+}
+
+.views_circle {
+    width: 6.3rem;
+    height: 6.3rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.views_image {
+    position: absolute;
+}
+
+.view_number {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: 0.596rem;
+    line-height: 2.4rem;
+
+}
+
+.view_text {
+    font-family: Raleway, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: var(--color-light-grey);
+    padding: 1.4rem 0 1.9rem 0;
+    text-align: center;
+}
+
+.views__section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 13rem; /* Dodanie szerokości boxa zeby tekst się zawijał */
+}
+
+.views__section-container:nth-child(1) .views_circle {
+    background-color: var(--color-redish);
+}
+
+.views__section-container:nth-child(2) .views_circle {
+    background-color: var(--color-primary);
+}
+
+.views__section-container:nth-child(3) .views_circle {
+    background-color: var(--color-green);
+}
+
+.views__section-container:nth-child(1) .views_image {
+    left: 3rem;
+}
+
+.views__section-container:nth-child(2) .views_image {
+    left: 2.1rem;
+    top: 1.3rem;
+}
+
+.views__section-container:nth-child(3) .views_image {
+    left: 3rem;
+    top: 0.2rem;
+}
+
+/* SEKCJA 3 */
+
+.benefits {
+    padding: 10rem 0;
+    background-color: var(--color-lightgrey-background);
+    display: flex;
+    justify-content: center;
+}
+
+.benefits_container {
+
+    max-width: 112.4rem;
+}
+
+.tabs {
+    display: flex;
+    background: var(--color-white);
+    border: 0.1rem solid var(--color-border);
+    width: 112.4rem;
+    height: 37rem;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    margin-bottom: 3.7rem;
+}
+
+.benefits_textbox {
+    max-width: 41.6rem;
+}
+
+.benefits_textbox {
+    max-width: 41.6rem;
+}
+
+.benefits_textbox_first {
+    margin-left: 2rem;
+
+}
+
+.benefits_textbox_second {
+    margin-right: 2rem;
+}
+
+.benefits_textbox_first::after {
+    content: "";
+    width: 27rem;
+    height: 0.4rem;
+    background: var(--color-redish);
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.benefits_textbox_second::after {
+    content: "";
+    width: 27rem;
+    height: 0.4rem;
+    background: var(--color-primary);
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.benefits_header {
+    padding: 9.1rem 0 3rem 0
+}
+
+.benefits_header-first {
+    padding: 9.1rem 0 3rem 0
+}
+
+.photo_laptop {
+    position: relative;
+    padding-top: 2rem;
+}
+
+.mackbook_img {
+    width: 38.6rem;
+    height: 21.9rem;
+    position: relative;
+    bottom: 9rem;
+    right: 12rem;
+}
+
+.red_square {
+    width: 18rem;
+    height: 18rem;
+    background: var(--color-redish);
+    border-radius: 4.1rem;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: relative;
+    top: 5rem;
+    left: 10rem;
+}
+
+.photo_phone {
+    margin: 1.2rem 0 0 5rem;
+}
+
+.blue_circle {
+    width: 32rem;
+    height: 32rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    position: relative;
+}
+
+.iphone_img {
+    width: 42.6rem;
+    height: 32.8rem;
+    position: relative;
+    bottom: 30rem;
+}
+
+.benefits_textbox_second {
+    padding-top: 6.9rem;
+}
+
+.third__box-container {
+    display: flex;
+    gap: 6.1rem
+}
+
+.benefits_textbox_third {
+    flex-direction: column;
+}
+
+.benefits_textbox_third::after {
+    content: "";
+    width: 27rem;
+    height: 0.4rem;
+    background: var(--color-redish);
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.container__pricing .headers {
+    text-align: center;
+    padding: 10rem 0 5rem 0;
+}
+
+.pricing__tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.9rem;
+}
+
+.pricing__tabs-box {
+    text-align: center;
+    width: 37.2rem;
+    height: 46.1rem;
+    border-radius: 1.8rem;
+}
+
+.pricing__tabs-box:nth-child(1) {
+    border: 1px solid var(--color-redish);
+}
+
+.pricing__tabs-box:nth-child(2) {
+    border: 1px solid var(--color-primary);
+    width: 40.5rem;
+    height: 50rem;
+    box-shadow: 0.5rem 1rem 2.7rem var(--color-primary-shadow);
+}
+
+.pricing__tabs-box:nth-child(3) {
+    border: 1px solid var(--color-green);
+}
+
+.headers_pricing {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+    padding: 3.4rem 0 1.4rem 0;
+}
+
+/* PRICING TAB */
+
+.pricing_box-price {
+    font-size: 4.6rem;
+    line-height: 7rem;
+    font-weight: 300;
+}
+
+.pricing__tabs-box:nth-child(1) .pricing_box-price {
+    color: var(--color-redish);
+}
+
+.pricing__tabs-box:nth-child(2) .pricing_box-price {
+    color: var(--color-primary);
+}
+
+.pricing__tabs-box:nth-child(3) .pricing_box-price {
+    color: var(--color-green);
+}
+
+.text_box-price {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    padding-top: 0.5rem;
+}
+
+.pricing_list-text {
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+
+/* Dodanie checkoboxow */
+.pricing_list-text::before {
+    content: "";
+    width: 1.1rem;
+    height: 1.1rem;
+    background-image: url("../images/Checkmark-1.svg");
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+/* Dodanie X check box*/
+.x-pricing_list::before {
+    content: "";
+    width: 1.1rem;
+    height: 1.1rem;
+    background-image: url("../images/Close.svg");
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.pricing__tabs-box:nth-child(1) .pricing_list {
+    padding-top: 6.9rem;
+}
+
+.pricing__tabs-box:nth-child(2) .pricing_list {
+    padding-top: 6.1rem;
+}
+
+.pricing__tabs-box:nth-child(3) .pricing_list {
+    padding-top: 5rem;
+}
+
+.pricing__tabs-box:nth-child(2) .pricing_list-text {
+    padding-bottom: 2.5rem;
+}
+
+.pricing_list {
+    padding-bottom: 7.1rem;
+}
+
+.pricing_btn {
+    border-radius: 2.3rem;
+    padding: 1.6rem 5.7rem;
+    font-size: 1.3rem;
+}
+
+.pricing__tabs-box:nth-child(1) .pricing_btn {
+    background: var(--color-redish);
+}
+
+.pricing__tabs-box:nth-child(2) .pricing_btn {
+    padding: 1.6rem 6.4rem;
+    box-shadow: 0.5rem 1rem 1.4rem var(--color-primary-shadow);
+}
+
+.pricing__tabs-box:nth-child(3) .pricing_btn {
+    background: var(--color-green);
+}
+
+.third__tab-rightbar {
+    position: relative;
+    background-color: var(--color-green);
+    max-width: 44rem;
+    height: 37rem;
+}
+
+.trumpet {
+    position: absolute;
+    width: 29.573rem;
+    height: 20.772rem;
+    top: 9.821rem;
+    left: 6.231rem;
+}
+
+/*KONTAKT*/
+
+.formularz {
+    display: flex;
+    justify-content: center;
+    padding-top: 15.5rem;
+}
+
+.formularz_kontakt .headers {
+    font-size: 4.9rem;
+    line-height: 5.7rem;
+    padding-bottom: 2.2rem;
+}
+
+.formularz_kontakt .content_text {
+    padding-bottom: 4.2rem;
+    line-height: 2.2rem;
+}
+
+.formularz_email_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: var(--color-grey);
+    font-size: 1.6rem;
+
+}
+
+.formularz_email {
+    display: flex;
+    align-items: center;
+}
+
+.formularz_number {
+    display: flex;
+    align-items: center;
+}
+
+.formularz_email::before {
+    content: "";
+    display: inline-block;
+    flex-direction: column;
+    background-image: url("../images/Mail Icon.svg");
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-right: 1rem;
+}
+
+.formularz_number::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/Phone Icon.svg");
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-right: 1rem;
+}
+
+.container_formularz {
+    margin-left: 11.4rem;
+    width: 44rem;
+    padding-top: 0.4rem;
+}
+
+.form-label {
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.formularz_box-labels {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4.2rem;
+    gap: 4.302rem
+}
+
+.form-input {
+    border: transparent;
+    border-bottom: 0.1rem solid var(--color-greyline);
+}
+
+/* Ostylowanie checkboxa*/
+
+.form_checkbox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.consent__text {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: var(--color-formgrey);
+
+}
+
+.form_checkbox {
+    display: block;
+    position: relative;
+
+    cursor: pointer;
+    font-size: 1.375rem;
+}
+
+.form_button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2rem;
+    padding-left: 35px;
+    margin-bottom: 12px;
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 -0.5rem 4rem var(--color-secondary-shadow);
+    margin-top: 5.9rem;
+    background: var(--color-lightgrey-background);
+    padding-left: 13.7rem;
+    padding-right: 13.6rem;
+
+}
+
+/*test*/
+
+
+/* Footer */
+
+.bestshop_logo {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    color: var(--color-primary);
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container_footer-left p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    color: var(--color-grey);
+}
+
+.container_footer-right {
+    padding: 3.5rem 3rem;
+}
+
+.twitter {
+    padding-right: 2rem;
+}
